@@ -1,13 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <script scr="js/script.js"></script>
-    <link rel="stylesheet" href="css/style.css"
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>PW-I - Introdução ao JS</title>
+        <script src="js/script.js"></script>
+    </head>
+    <body>
+        <h3>Exemplo 1 - Login usando JS</h3>
+        Login <input type="email" id="frmemail">
+        Senha <input type="password" id="frmpassword">
+        <button onclick="login()">Realizar Login</button>
+
+        <h3>Exemplo 2 - Operações simples usando JS</h3>
+        <button onclick="somar()">Somar</button>
+        <button onclick="subtrair()">Subtrair</button>
+        <button onclick="multiplicar()">Multiplicar</button>
+        <button onclick="dividir()">Dividir</button>
+        <button onclick="quadrado()">Elevar ao quadrado</button>
+
+        
+        <h3>Exemplo 3 - Pegando informações do HTML e inserindo no próprio HTML </h3>
+        <input type="text" id="frmNome"><br/>
+        <p id="exibeNome">Nome do usuário</p>
+        
+        <button onclick="nome()">Pegar o nome</button>
+
+        <h3>Exercicio 1 - Adicionando dados em uma lista</h3>
+        <input type="text" id="frmProduto"><br/>
+        <ul id="produto">
+            <li>RESULTADO </li>
+        </ul>
+        <button onclick="produto()">Adiciona na lista</button>
+    </body>
 </html>
