@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <title>PW-I - Introdução ao JS</title>
         <script src="js/script.js"></script>
+        <css scr="css/style.css"></css>
     </head>
     <body>
         <h3>Exemplo 1 - Login usando JS</h3>
@@ -25,11 +26,21 @@
         
         <button onclick="nome()">Pegar o nome</button>
 
-        <h3>Exercicio 1 - Adicionar dados em uma lista</h3>
+        <h3>Exercício 1 - Adicionar dados em uma lista</h3>
         <input type="text" id="frmProduto"><br/>
         <ul id="produto">
             <li>RESULTADO </li>
         </ul>
         <button onclick="produto()">Adiciona na lista</button>
+
+        <h3>Exercício 2 - Adicionar produtos ao carrinho</h3>
+        <input type="text" name="prod_nome" placehoulder="Nome do produto" id="prod_nome">
+        <input type="text" name="prod_marca" placehoulder="Marca doproduto" id="prod_marca">
+        <input type="number" name="prod_preco" id="prod_preco">
+        <input type="button" value="Cadastrar Produto" onclick="Cadastrar()">
+        <ul id="lista_prod">
+
+
+        </ul>
     </body>
 </html>

@@ -123,6 +123,37 @@ function array(){
     }
 }
 
+function Cadastrar(){
+    //const não muda o valor. Mas pode usar let sempre que estiver na dúvida que qual colocar.
+    //.value pega apenas o valor do elemento.
+    //document. diz ao JS para ir até o html e procurar aquele valor.
+    const item = {
+        nome: document.getElementById("prod_nome").value,
+        marca: document.getElementById("prod_marca").value,
+        preco: document.getElementById("prod_preco").value
+    }
+
+    //Criar um novo elemento LI:
+    const lista_item = document.createElement("li")
+    //Adicionar coneúdo nesse elemento:
+    // lista_item.innerHTML += prod.mome //puxei o nome do objeto
+    // lista_item.innerHTML += prod.marca
+    // lista_item.innerHTML += prod.preco
+    const prod_nome = document.createElement("h3")
+    const prod_marca = document.createElement("h4")
+    const prod_preco = document.createElement("p")
+    prod_nome.innerHTML = item.nome
+    prod_marca.innerHTML = item.marca
+    prod_preco.innerHTML = item_preco
+    lista_item.appendChild(prod_nome)
+    lista_item.appendChild(prod_marca)
+    lista_item.appendChild(prod_preco)
+
+    //Adicionar esse LI no UL:
+    document.getElementById("lista_prod").appendChild(lista_item)
+    console.log(lista_item)
+}
+
 //Desafio - Criar uma função que adicione, em uma lista, o nome de um produto.
 
 //Manipular o DOM
