@@ -154,6 +154,44 @@ function Cadastrar(){
     console.log(lista_item)
 }
 
+//parâmetros
+function Nome(param1, param2){
+    //código
+    //return()
+}
+
+(param1, param2) => {
+    //código
+    return
+}
+
+() => {
+
+}
+
+//Funçao Map - vai ler o array
+
+const novoNumeros= []
+const numeros = [5, 48, 65, 33, 12]
+//for 0 < numeros.lenght
+numeros.map( (num) => {
+    novoNumeros.push(num * 2)
+} )
+console.log(numeros)
+console.log(novoNumeros)
+//Para cada elemento do array, irá executar a função acima.
+ 
+const numbers = [1, 2, 5, 7, 6, 34, 20, 89, 54, 27, 55, 61, 32, 48, 45, 36, 17, 18, 33, 62]
+const newNumbers = []
+
+numbers.map((num) => {
+    if (num %2 === 0){
+        newNumbers.push(num)
+    }
+})
+console.log(numbers)
+console.log(newNumbers)
+
 //Desafio - Criar uma função que adicione, em uma lista, o nome de um produto.
 
 //Manipular o DOM
