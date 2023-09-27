@@ -14,6 +14,16 @@ function concatenaPalavras(){
     console.log(concatenacao)
 }
 
+function somaNumeros(){
+    let numero1 = Number(prompt("Digite um número:"))
+    let numero2 = Number(prompt("Digite outro número:"))
+    console.log(numero1 + numero2)
+}
+
+function subtraiNumeros(){
+    //não feita
+}
+
 function criaObjeto(){
     let nome = prompt("Digite seu nome:")
     let idade = parseInt(prompt("Digite sua idade:"))
@@ -25,4 +35,35 @@ function criaObjeto(){
     }
 
     console.log(usuario)
+}
+function calculadora(){
+    let operacao = prompt("Digite o sinal da operação: (+, -, * ou /)")
+    let n1 = Number(prompt("Digite o primeiro número da operação:"))
+    let n2 = Number(prompt("Digite o segundo número da operação:"))
+
+    switch(operacao){
+        case '+':
+            console.log(n1 + n2)
+            break;
+            
+        case '-':
+            console.log(n1-n2)
+            break;
+        
+        case '*':
+            console.log(n1*n2)
+            break; 
+        
+        case "/":
+            console.log(n1/n2);
+            break;
+        }
+
+}
+
+function constante(){
+    const nome = prompt("Digite seu nome:")
+    console.log(nome)
+
+    //incompleto
 }
