@@ -165,10 +165,6 @@ function Nome(param1, param2){
     return
 }
 
-() => {
-
-}
-
 //Funçao Map - vai ler o array
 
 const novoNumeros= []
@@ -179,8 +175,9 @@ numeros.map( (num) => {
 } )
 console.log(numeros)
 console.log(novoNumeros)
-//Para cada elemento do array, irá executar a função acima.
+//No Map, para cada elemento do array será executar a função descrita.
  
+
 const numbers = [1, 2, 5, 7, 6, 34, 20, 89, 54, 27, 55, 61, 32, 48, 45, 36, 17, 18, 33, 62]
 const newNumbers = []
 
@@ -192,7 +189,7 @@ numbers.map((num) => {
 console.log(numbers)
 console.log(newNumbers)
 
-//Desafio - Criar uma função que adicione, em uma lista, o nome de um produto.
+//Exemplo Flech
 
 //Manipular o DOM
 //Document Object Model
