@@ -1,0 +1,6 @@
+*Endpoints: site/endereço.
+*Request: pedir informações ao endpoint.
+*Status code tem haver com HTTP.
+*Status code 200 no insomnia: Deu certo.
+*Status code 404: Erro/não encontrado/não existente.
+*Result: Array(s) na API.
