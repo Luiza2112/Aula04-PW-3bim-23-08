@@ -9,7 +9,8 @@
 
 body{
     text-align: center;
-    background: linear-gradient(to bottom, #9fe7fd, #f1fdff);
+    /*background: linear-gradient(to bottom, #9fe7fd, #f1fdff);*/
+    background: #9fe7fd;
     min-height: 100vh;
 }
 
@@ -28,8 +29,8 @@ main{
 
 .pokemon_img{
     position: absolute;
-    bottom: 42%;
-    left: 32%;
+    bottom: 49%;
+    left: 33%;
     transform: translate(-63%, 20%);
     height: 18%;
 }
@@ -37,10 +38,10 @@ main{
 .pokemon_data{
     position: absolute;
     font-weight: 600;
-    color: rgb(15, 14, 14);
-    top: 37%;
+    color: rgb(39, 36, 36);
+    top: 37.5%;
     right: 22%;
-    font-size: clamp(8px, 5vw, 25px);
+    font-size: clamp(8px, 5vw, 19px);
 }
 
 .pokemon_name{
