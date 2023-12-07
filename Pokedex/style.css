@@ -94,3 +94,29 @@ main{
     box-shadow: inset -4px 4px 0 #222;
     font-size: 0.7rem;
 }
+
+.Capturar{
+    position: absolute;
+    bottom: 17%;
+    left: 26.5%;
+    width: 25%;
+    transform: translate(-10%, 0);
+    display: flex;
+}
+
+.capturar{
+    width: 50%;
+    padding: 4%;
+    border: 2px solid #000;
+    border-radius: 5px;
+    font-size: clamp(8px, 5vw, 0.8rem);
+    font-weight: 600;
+    color: #fff;
+    background-color: #444;
+    box-shadow: -2px 2px 0 #222, -4px 5px 0 #000;
+}
+
+.capturar:active{
+    box-shadow: inset -4px 4px 0 #222;
+    font-size: 0.7rem;
+}
