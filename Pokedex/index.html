@@ -11,7 +11,13 @@
         <title>Pokedex</title>
     </head>
     <body>
-        <main class="Pokedex">
+
+        <div class="barra">
+            <img src="./img/pokemonGo.png" class="logo">
+        </div>
+
+        <div class="Pokedex">
+
             <img src="#" alt="pokemon" class="pokemon_img">
 
             <h1 class="pokemon_data">
@@ -33,11 +39,36 @@
             </div>
 
             <div class="Capturar">
-                <button class="capturar">Capturar</button>
+                <button class="button capturar">Capturar</button>
             </div>
 
             <img src="./img/pokedex.png" alt="pokedex" class="pokedex">
-        </main>
+        </div>
 
+        <div class="container">
+
+            <div class="capturados">
+                <p>Pokémons Capturados:</p>
+                <ul class="pokemon-list">
+                    <!-- Aqui vão os pokemons "gerados" no javascript-->
+                    <li class="liPokemon">
+                        <!--<img class="img">
+                        <span class="pokemon_number"></span> :
+                        <span class="pokemon_name"></span>-->
+                    </li>
+                </ul>
+            </div>
+
+            
+            <div class="cartas">
+                <p>Pokémons:</p>
+                <div class="lista">
+                    <ul id="listaPokemons">
+                    <!-- Aqui vão os pokemons "gerados" no javascript-->
+                    </ul>
+                </div>
+            </div>
+
+        </div>
     </body>
 </html>

@@ -9,6 +9,11 @@ const form = document.querySelector('.form')
 const input = document.querySelector('.input_search')
 const buttonVoltar = document.querySelector('.voltar')
 const buttonProximo = document.querySelector('.proximo')
+const buttonCapturar = document.querySelector('.capturar')
+
+const img = document.querySelector('img')
+const el = document.querySelector('span')
+const el2 = document.querySelector('span')
 
 let searchPokemon = 1
 
@@ -67,3 +72,47 @@ buttonProximo.addEventListener('click', () => {
 })
 
 showPokemon(searchPokemon)
+
+//Segunda parte: Mostrar os capturados.
+buttonCapturar.addEventListener('click', () => {
+
+  const imgSrc = pokemonImg.src
+
+  const Capturados = document.querySelector('.capturados')
+  const ul = document.querySelector('.pokemon-list')
+  const li = document.querySelector('.liPokemon')
+  ul.appendChild(li)
+
+  const el = document.createElement('span')
+  el.innerHTML = pokemonNumber.innerHTML + '-'
+  const el2 = document.createElement('span')
+  el2.innerHTML = pokemonName.innerHTML + '<br>'
+  const img = document.createElement('sprite')
+  img.innerHTML = '<img src="${pokemonImg.src}">' + '<br>'
+
+  li.appendChild(el)
+  li.appendChild(el2)
+  li.appendChild(img)
+  
+})
+
+//Terceira parte: Exibir os Pokémons, com o limite de 251
+function showPokemonList(){
+  let listaPokemons = []
+  fetch(BASEURL + '?limit=251').then( Response => {
+      if (Response.status == 200){
+          listaPokemons = Response.json().then( json => {json.results.map( pokemon => { 
+              let liPokemon = document.createElement("ul")
+              let liPokemonImg = document.createElement("img")
+              fetch(pokemon.url).then(Response => { pokemonIMG = Response.json().then( (pokemon) => {(liPokemonImg.src = pokemon.sprites.front_default)})})
+              liPokemon.innerHTML = pokemon.name
+              liPokemon.appendChild(liPokemonImg)
+              document.getElementById("listaPokemons").appendChild(liPokemon)
+          })
+          return json})
+          return listaPokemons
+      }
+  })
+}
+
+showPokemonList()

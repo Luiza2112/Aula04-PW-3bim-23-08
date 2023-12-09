@@ -14,17 +14,32 @@ body{
     min-height: 100vh;
 }
 
-main{
+.barra{
+    width: 100%;
+    height: 100px;
+    /*background-color: #00c3ff;*/
+    background-color: #c00d0d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    position: absolute;
+    width: 20%;
+    height: 12%;
+}
+
+.Pokedex{
     display: inline-block;
     position: relative;
-    margin-top: 2%;
+    margin-bottom: 2%;
     padding: 15px;
 }
 
 .pokedex{
     width: 60%px;
     max-width: 850px;
-    /*margin: 57px 190px 57px 190px;*/
 }
 
 .pokemon_img{
@@ -64,7 +79,7 @@ main{
     border-radius: 5px;
     font-weight: 600;
     color: rgb(39, 36, 36);
-    font-size: clamp(8px, 5vw, 0.8rem);
+    font-size: clamp(8px, 1vw, 0.8rem);
 
 }
 
@@ -83,7 +98,7 @@ main{
     padding: 4%;
     border: 2px solid #000;
     border-radius: 5px;
-    font-size: clamp(8px, 5vw, 0.8rem);
+    font-size: clamp(8px, 1vw, 0.8rem);
     font-weight: 600;
     color: #fff;
     background-color: #444;
@@ -104,19 +119,58 @@ main{
     display: flex;
 }
 
-.capturar{
+.buttoncapturar{
     width: 50%;
     padding: 4%;
     border: 2px solid #000;
     border-radius: 5px;
-    font-size: clamp(8px, 5vw, 0.8rem);
+    font-size: clamp(8px, 1vw, 0.8rem);
     font-weight: 600;
     color: #fff;
     background-color: #444;
     box-shadow: -2px 2px 0 #222, -4px 5px 0 #000;
 }
 
-.capturar:active{
+.buttoncapturar:active{
     box-shadow: inset -4px 4px 0 #222;
     font-size: 0.7rem;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    column-gap: 1%;
+    height: 100vh;
+    background-color: #9fe7fd;
+}
+
+.capturados{
+    width:;
+    height:;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 8px;
+    border: 2px solid black;
+}
+
+p{
+    font-size: clamp(28px, 2vw, 1rem);
+    font-weight: 600;
+    color: #000000;
+}
+
+span{
+    font-size: clamp(20px, 2vw, 1rem);
+    font-weight: 600;
+    color: #000000;
+}
+
+.cartas{
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 8px;
+    border: 2px solid black;
+}
+
+#listaPokemons{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
 }
